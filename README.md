@@ -6,4 +6,4 @@ MOS Burger website revamp
 
 Hello!
 
-<img src="images/mos_logo.png">
+<img src="images/mos-logo.png">

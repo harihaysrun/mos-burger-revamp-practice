@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
+
+    <title>MOS Burger Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/mos-logo-favicon.png">
+</head>
+<body>
+
+    <!-- nav w text -->
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/mos-logo.png" alt=""></a>
+
+          <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link red-line" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Mos Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pink-line" href="#">Mos Outlets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link green-line" href="#">Mos Park</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link blue-line" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="delivery-partners mx-left">
+                Make your orders on:
+                <div>
+                    <img src="images/dp-foodpanda.png" alt="">
+                    <img src="images/dp-deliveroo.png" alt="">
+                    <img src="images/dp-grabfood.png" alt="">
+                </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <!-- yellow pointer nav -->
+        <div class="pointer"></div>
+        
+    </nav>
+
+    <main>
+
+        <!-- mobile menu dropdown -->
+        <div id="menu-dropdown">
+            Main Menu
+            <img src="images/dropdown.png" alt="">
+        </div>
+        
+        <!-- image carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- desktop menu bar -->
+        <div id="desktop-menu">
+            <ul>
+                <li class="active-tab">Main Menu</li>
+                <li>Sides</li>
+                <li>Soup</li>
+                <li>Dessert</li>
+                <li>Drinks</li>
+                <li>Breakfast</li>
+                <li>Kids Meal</li>
+            </ul>
+        </div>
+
+        <div id="body-container">
+            
+            <!-- Legend, Dropdown & PDF download button -->
+            <div class="row justify-content-between">
+
+                <div class="menu-item-count-desktop col-lg-5">
+                    <h1>Main Menu</h1>
+                    <b>28 items</b> on the main menu
+                </div>
+                
+                <div class="sort-btn col-12 col-lg-6">
+                    <label for="sort"></label>
+                    <select name="sort" id="sort">
+                        <option value="">Sort by:</option>
+                        <option value="newest">Newest</option>
+                        <option value="price">Price</option>
+                    </select>
+    
+                    <button id="pdf-dl">
+                        <img src="images/download-pdf.png" alt="">
+                        <span>Download</span>&nbspPDF
+                    </button>
+                </div>
+    
+                <div id="legend" class="col-12">
+                    <b>Main ingredient</b>
+                    <div id="legend-icons" class="row row-cols-2 row-cols-sm-4 row-cols-lg-1">
+                        <div class="col"><img src="images/icon-beef.png" alt="Beef">Beef</div>
+                        <div class="col"><img src="images/icon-chicken.png" alt="Chicken">Chicken</div>
+                        <div class="col"><img src="images/icon-seafood.png" alt="Seafood">Seafood</div>
+                        <div class="col"><img src="images/icon-vege.png" alt="Vegetable">Vegetable</div>
+                    </div>
+                </div>
+    
+                <div class="menu-item-count col-12"><b>28 items</b> on the main menu</div>
+            </div>
+
+            <!-- Burgers -->
+            <div id="burgers" class="row row-cols-2 row-cols-md-4">
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-1.png" alt="">
+                    </div>
+                    <div class="burger-name">MOS Burger</div>
+                    <span class="price">$3.90</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-2.png" alt="">
+                    </div>
+                    <div class="burger-name">MOS Cheeseburger</div>
+                    <span class="price">$4.20</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                        <img src="images/icon-hot.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-3.png" alt="">
+                    </div>
+                    <div class="burger-name">Spicy MOS Burger</div>
+                    <span class="price">$4.10</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                        <img src="images/icon-hot.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-4.png" alt="">
+                    </div>
+                    <div class="burger-name">Spicy MOS Cheeseburger</div>
+                    <span class="price">$4.40</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-seafood.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-5.png" alt="">
+                    </div>
+                    <div class="burger-name">Fish Burger</div>
+                    <span class="price">$3.80</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-6.png" alt="">
+                    </div>
+                    <div class="burger-name">Teriyaki Cheeseburger</div>
+                    <span class="price">$3.90</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-chicken.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-7.png" alt="">
+                    </div>
+                    <div class="burger-name">Teriyaki Chicken Burger</div>
+                    <span class="price">$4.35</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-chicken.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-8.png" alt="">
+                    </div>
+                    <div class="burger-name">Chicken Burger</div>
+                    <span class="price">$3.80</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-vege.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-9.png" alt="">
+                    </div>
+                    <div class="burger-name">Hokkaido Croquette Burger</div>
+                    <span class="price">$2.95</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-seafood.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-10.png" alt="">
+                    </div>
+                    <div class="burger-name">Ebi Rice Burger</div>
+                    <span class="price">$4.30</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-seafood.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-11.png" alt="">
+                    </div>
+                    <div class="burger-name">Kakiage Rice Burger</div>
+                    <span class="price">$4.30</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-12.png" alt="">
+                    </div>
+                    <div class="burger-name">Yakiniku Rice Burger</div>
+                    <span class="price">$4.30</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-chicken.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-13.png" alt="">
+                    </div>
+                    <div class="burger-name">Tsukune Rice Burger</div>
+                    <span class="price">$4.30</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                        <img src="images/icon-vege.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-14.png" alt="">
+                    </div>
+                    <div class="burger-name">Natsumi Beef</div>
+                    <span class="price">$3.70</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-chicken.png" alt="">
+                        <img src="images/icon-hot.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-15.png" alt="">
+                    </div>
+                    <div class="burger-name">Natsumi Chicken Teriyaki</div>
+                    <span class="price">$4.30</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-seafood.png" alt="">
+                        <img src="images/icon-hot.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-16.png" alt="">
+                    </div>
+                    <div class="burger-name">Natsumi Fish</div>
+                    <span class="price">$3.70</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-17.png" alt="">
+                    </div>
+                    <div class="burger-name">Premium Smoked Wagyu Burger</div>
+                    <span class="price">$9.10</span>
+                    <span class="cheese">With cheese – <b>$9.30</b></span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-18.png" alt="">
+                    </div>
+                    <div class="burger-name">Teriyaki Glazed Wagyu Burger</div>
+                    <span class="price">$7.40</span>
+                    <span class="cheese">With cheese – <b>$7.70</b></span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-vege.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-19.png" alt="">
+                    </div>
+                    <div class="burger-name">Classic Impossible™ Burger</div>
+                    <span class="price">$9.20</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-vege.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-20.png" alt="">
+                    </div>
+                    <div class="burger-name">Pumpkin Mushroom Impossible™ Burger</div>
+                    <span class="price">$10.15</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <img class="new-icon" src="images/icon-new.png" alt="">
+                    <div class="burger-img">
+                        <img src="images/burger-21.png" alt="">
+                    </div>
+                    <div class="burger-name">XL Wagyu Menchikatsu Burger (Katsu)</div>
+                    <span class="price">$9.90</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <img class="new-icon" src="images/icon-new.png" alt="">
+                    <div class="burger-img">
+                        <img src="images/burger-22.png" alt="">
+                    </div>
+                    <div class="burger-name">XL Wagyu Menchikatsu Burger (Curry)</div>
+                    <span class="price">$9.90</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-23.png" alt="">
+                    </div>
+                    <div class="burger-name">Cheezy Wagyu Burger</div>
+                    <span class="price">$7.95</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-24.png" alt="">
+                    </div>
+                    <div class="burger-name">Hamburger</div>
+                    <span class="price">$2.00</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-25.png" alt="">
+                    </div>
+                    <div class="burger-name">Cheeseburger</div>
+                    <span class="price">$2.30</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                        <img src="images/icon-chicken.png" alt="">
+                        <img src="images/icon-hot.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-26.png" alt="">
+                    </div>
+                    <div class="burger-name">Chilli Dog</div>
+                    <span class="price">$4.15</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                        <img src="images/icon-chicken.png" alt="">
+                        <img src="images/icon-hot.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-27.png" alt="">
+                    </div>
+                    <div class="burger-name">Spicy Chilli Dog</div>
+                    <span class="price">$4.30</span>
+                </div>
+
+                <div class="col burger">
+                    <div class="burger-type">
+                        <img src="images/icon-beef.png" alt="">
+                        <img src="images/icon-chicken.png" alt="">
+                    </div>
+                    <div class="burger-img">
+                        <img src="images/burger-28.png" alt="">
+                    </div>
+                    <div class="burger-name">Plain Dog</div>
+                    <span class="price">$3.90</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="happy"></div>
+
+        <div class="green-footer">
+            <div id="socmed">
+                Follow us on:
+                <div class="socmed-icons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <!-- <img src="images/fb2.png" alt=""> -->
+                    <!-- <img src="images/ig2.png" alt=""> -->
+                </div>
+            </div>
+            <span>
+                COPYRIGHT © 2007 - 2021
+                <br>MOS FOODS SINGAPORE PTE LTD
+                <br>ALL RIGHTS RESERVED.
+            </span>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
