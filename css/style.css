@@ -250,7 +250,7 @@ img{
 }
 
 #burgers{
-    margin-top:50px;
+    /* margin-top:50px; */
     margin-bottom:50px;
     width:100%;
 }
@@ -685,6 +685,10 @@ footer span{
     .new-icon{
         top:10px;
         left:10px;
+    }
+
+    #burgers{
+        margin-top:50px;
     }
     
     .burger:hover{
