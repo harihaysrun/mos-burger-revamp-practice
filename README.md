@@ -1,6 +1,6 @@
 # MOS Burger menu page revamp (Practice 1)
 
-<img src="readme-img2.png">
+<img src="readme-img3.png">
 
 
 Bootstrap assignment
