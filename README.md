@@ -1,6 +1,6 @@
-# mos-burger-revamp
+# MOS Burger menu page revamp (school practice)
 
 <img src="readme.png">
 
 
-Made for school practice only 😬
+😬
