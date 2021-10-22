@@ -5,4 +5,4 @@
 
 Bootstrap assignment
 
-<a href="https://harihaysrun.github.io/mos-burger-revamp-practice/" style="color:#CF0015;">Click to view responsive page mockup</a>
+<a href="https://harihaysrun.github.io/mos-burger-revamp-practice/" style="color:#CF0015 !important;" target="_blank">Click to view responsive page mockup</a>
