@@ -6,4 +6,4 @@ MOS Burger website revamp
 
 Hello!
 
-<img src="images/readme.png">
+<img src="readme.png">
