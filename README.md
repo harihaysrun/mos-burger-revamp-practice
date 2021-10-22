@@ -1,4 +1,4 @@
-# MOS Burger menu page revamp (school practice)
+# MOS Burger menu page revamp (Practice 1)
 
 <img src="readme.png">
 
