@@ -1,9 +1,6 @@
-# mos-burger-revamp
-MOS Burger website revamp
-
-
-
-
-Hello!
+# MOS Burger menu page revamp (Practice 1)
 
 <img src="readme.png">
+
+
+😬
